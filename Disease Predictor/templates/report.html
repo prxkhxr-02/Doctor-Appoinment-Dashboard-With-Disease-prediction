@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction Report</title>
+    <link rel="stylesheet" href="{% static 'report.css' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .report-container {
+            max-width: 98%;
+            width: 98%;
+            margin: 20px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .precautions ul {
+            padding-left: 20px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            text-align: right;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <section class="patient-info">
+            <h2>Patient Information</h2>
+            <p><strong>Name:</strong> {{ Name }}</p>
+            <p><strong>Predicted Disease:</strong> {{ prediction }}</p>
+        </section>
+        <section class="disease-info">
+            <h2>Disease Information</h2>
+            <p><strong>Description:</strong> {{ description }}</p>
+        </section>
+        <section class="precautions">
+            <h2>Precautions</h2>
+            <ul>
+                <li>{{ pre1 }}</li>
+                <li>{{ pre2 }}</li>
+                <li>{{ pre3 }}</li>
+                <li>{{ pre4 }}</li>
+            </ul>
+        </section>
+        <div class="signature">
+            <p>Doctor's Signature</p>
+            <p><strong>Dr. Prakhar Pandey</strong></p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="http://localhost/doc_oc/" target="_blank">Consult Doctor</a>
+    </div>
+</body>
+</html>

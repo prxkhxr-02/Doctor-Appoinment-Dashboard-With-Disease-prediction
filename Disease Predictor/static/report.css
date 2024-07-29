@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e86c1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+.report-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.report-container h2 {
+    color: #2e86c1;
+    border-bottom: 2px solid #2e86c1;
+    padding-bottom: 10px;
+}
+
+.patient-info,
+.disease-info,
+.precautions {
+    margin-bottom: 20px;
+}
+
+.patient-info p,
+.disease-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.signature p {
+    margin: 5px 0;
+}
+
+.signature strong {
+    font-size: 20px;
+}
